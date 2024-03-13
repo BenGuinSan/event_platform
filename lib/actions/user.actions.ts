@@ -31,7 +31,7 @@ export const updateUser = async (clerkId: string  ,user: UpdateUserParams) => {
         if (!updatedUser) throw new Error('User update failed')
         return  JSON.parse(JSON.stringify(updatedUser))
 
-    } catch (err) {
+    } catch (err) { 
         handleError(err)
     }
 }
